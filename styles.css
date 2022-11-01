@@ -1,0 +1,432 @@
+
+*{margin:0px;
+padding:0px;
+}
+
+@media (min-width:601px)
+{#navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    height:16%;
+    width: 100%;
+    background-color: #1e3888;
+
+
+}
+nav ul li{list-style: none;
+    
+    padding:10px;
+font-size: 30px;}
+nav ul{
+    display:flex;
+flex-direction: row;
+align-items: center;
+padding-right: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color:#47a8bd;
+}
+
+
+#welcome-section{
+
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+    height:100vh;
+    width:100%;
+    
+}
+#hijo1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  70% 30%;
+   grid-template-areas:  "a b"
+   "c c";
+   
+   
+    width: 60%;
+    height: 50%;
+}
+#mi-foto{
+    height: 250px;
+grid-area: a;
+align-self: start;
+border-radius: 8px;
+
+}
+#presentacion{
+grid-area:b;
+color:  #1e3888;
+text-align: center;
+align-self: start;
+
+}
+#presentacion h1{
+    font-size: 60px;
+}
+#presentacion p{
+    font-size: 40px;
+}
+#hijo2{
+    grid-area:c;    
+    justify-self: auto;
+}
+#hijo2 img{
+   
+
+    
+    width: 30%;
+    
+    background-color: #bbe7e8;
+}
+
+#projects{
+    display:grid;
+   padding-top: 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 40% 40%;
+    align-self: center;
+   
+   
+    
+   
+    
+
+}
+h2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 60px;
+    color:#1e3888;
+    margin:30px;
+}
+
+#pagina-tributo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 400px;
+    height: 400px;
+      align-self: center;
+  justify-self: center;
+
+    
+}
+#formulario{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 400px;
+    height: 400px;
+      align-self: center;
+  justify-self: center;
+  
+}
+#landing-page{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 400px;
+    height: 400px;
+      align-self: center;
+  justify-self: center;
+
+    
+}
+#tec-doc{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 400px;
+    height: 400px;
+      align-self: center;
+  justify-self: center;
+
+    
+}
+.projet-tile{
+    display:flex;
+    flex-direction: column;
+   
+    
+    
+
+}
+.projetc-tile a{
+    
+    width:100%;
+    height: auto;
+    
+    
+}
+.project-tile a figcaption{
+    margin: 0;
+    padding:5px;
+    background-color: black;
+    color: aliceblue;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    text-align: center;
+    
+}
+section div a{
+    text-decoration: none;
+    
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contact h2{
+    font-size: 60px;
+    margin: 30px;
+}
+#contact a img{
+    width:50px;
+    height: 40px;
+    padding: 10px;
+}
+#contact a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    color: #1e3888;
+    
+
+
+}
+#contact p {
+    color: #1e3888;
+}
+img{ 
+    width:100%;
+    max-height: 200px;
+    
+
+    
+}
+#cuerpa{
+    background:#bbe7e8 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+}
+
+@media (max-width:600px){
+    
+    #navbar{
+        display: flex;
+    justify-content: center;
+        position: fixed;
+        height:16%;
+        width: 100%;
+        background-color: #1e3888;
+    
+    
+    }
+    nav ul li{list-style: none;
+       
+        padding:10px;
+    font-size: 30px;}
+    nav ul{
+        display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    
+    }
+    nav ul a{
+        text-decoration: none;
+        color:#47a8bd;
+    }
+    
+    
+    #welcome-section{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+        height:100vh;
+        width:100%;
+        padding-top: 80px;
+        
+    }
+    #hijo1{
+        display: flex;
+        flex-direction: column;
+       margin: 30px;
+       align-items: center;
+        width: 100%;
+    }
+    #mi-foto{
+        
+        width: 80%;
+        height: auto;
+    border-radius: 10px;
+    
+    }
+    #presentacion{
+    display: flex;
+    flex-direction: column;
+    color:  #1e3888;
+    text-align: center;
+   
+    
+    }
+    #presentacion h1{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    #presentacion p{
+        font-size: 25px;
+
+    }
+    #hijo2{
+        text-align: center;
+        margin: 20px;
+    }
+    #hijo2 img{
+       
+    
+        
+        width: 30%;
+        
+        background-color: #bbe7e8;
+    }
+    
+    #projects{
+        display:flex;
+        flex-direction: column;
+       
+       
+        
+       
+        
+    
+    }
+    h2{
+       
+        text-align: center;
+        font-size: 40px;
+        color:#1e3888;
+        margin:50px;
+    }
+    
+    #pagina-tributo{
+      
+        width: 400px;
+        height: 400px;
+          align-self: center;
+ 
+        
+    }
+    #formulario{
+     
+        width: 400px;
+        height: 400px;
+          align-self: center;
+    
+    }
+    #landing-page{
+      
+        width: 400px;
+        height: 400px;
+          align-self: center;
+     
+    
+        
+    }
+    #tec-doc{
+        
+        width: 400px;
+        height: 400px;
+        align-self: center;
+    
+        
+    }
+    .projet-tile{
+        display:flex;
+        flex-direction: column;
+       
+        
+        
+    
+    }
+    .projetc-tile a{
+        
+        width:100%;
+        height: auto;
+        
+        
+    }
+    .project-tile a figcaption{
+        margin: 0;
+        padding:5px;
+        background-color: black;
+        color: aliceblue;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    
+        text-align: center;
+        
+    }
+    section div a{
+        text-decoration: none;
+        
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #contact h2{
+        font-size: 60px;
+        margin: 30px;
+    }
+    #contact a img{
+        width:50px;
+        height: 40px;
+        padding: 10px;
+    }
+    #contact a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        align-items: center;
+        color: #1e3888;
+        
+    
+    
+    }
+    #contact p {
+        color: #1e3888;
+    }
+    .perfiles{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    img{ 
+        width:100%;
+        max-height: 200px;
+        
+    
+        
+    }
+    #cuerpa{
+        background:#bbe7e8 ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
